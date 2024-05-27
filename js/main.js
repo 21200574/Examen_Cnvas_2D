@@ -110,12 +110,12 @@ let images = generateRandomImages(30);
 
 // Agregar las nuevas imágenes estáticas
 let staticImages = [
-    new ImageObject(1400, 30, 110, 160, 'Imagenes/Ramos.png', 0, 0), 
-    new ImageObject(1400, 650,110, 160, 'Imagenes/Nacho.png', 0, 0),
-    new ImageObject(950, 320, 110, 160, 'Imagenes/Kroos.png', 0, 0),
+    new ImageObject(1200, 30, 110, 160, 'Imagenes/Ramos.png', 0, 0), 
+    new ImageObject(1200, 650,110, 160, 'Imagenes/Nacho.png', 0, 0),
+    new ImageObject(850, 320, 110, 160, 'Imagenes/Kroos.png', 0, 0),
     new ImageObject(500, 600, 110, 160, 'Imagenes/CR7.png', 0, 0),
     new ImageObject(500, 40, 110, 160, 'Imagenes/Benzema.png', 0, 0),
-    new ImageObject(1800, 320, 110, 160, 'Imagenes/Iker.png', 0, 0),
+    new ImageObject(1400, 320, 110, 160, 'Imagenes/Iker.png', 0, 0),
 ];
 images = images.concat(staticImages);
 
