@@ -92,8 +92,8 @@ function generateRandomImages(numImages) {
         let x = Math.random() * (window_width - width); // Posición X dentro del canvas
         let y = Math.random() * (window_height - height); // Posición Y dentro del canvas
         let src = 'Imagenes/Balon.png'; // Ruta de la imagen
-        let dx =  10; 
-        let dy =  10; 
+        let dx =  9; 
+        let dy =  9; 
         images.push(new ImageObject(x, y, width, height, src, dx, dy));
     }
     return images;
@@ -106,14 +106,14 @@ function showInstructions() {
 
 showInstructions(); // Mostrar las instrucciones al inicio
 
-let images = generateRandomImages(30);
+let images = generateRandomImages(20);
 
 // Agregar las nuevas imágenes estáticas
 let staticImages = [
     new ImageObject(1200, 30, 110, 160, 'Imagenes/Ramos.png', 0, 0), 
-    new ImageObject(1200, 650,110, 160, 'Imagenes/Nacho.png', 0, 0),
+    new ImageObject(1200, 500,110, 160, 'Imagenes/Nacho.png', 0, 0),
     new ImageObject(850, 320, 110, 160, 'Imagenes/Kroos.png', 0, 0),
-    new ImageObject(500, 600, 110, 160, 'Imagenes/CR7.png', 0, 0),
+    new ImageObject(500, 500, 110, 160, 'Imagenes/CR7.png', 0, 0),
     new ImageObject(500, 40, 110, 160, 'Imagenes/Benzema.png', 0, 0),
     new ImageObject(1400, 320, 110, 160, 'Imagenes/Iker.png', 0, 0),
 ];
@@ -191,9 +191,9 @@ canvas.addEventListener('mousedown', function(evt) {
 function drawCounters() {
     ctx.font = "bold 50px Arial";
     ctx.fillStyle = "White";    
-    ctx.fillText("Visitante: " + disappearedCount, 900, window_height - 825);
-    ctx.fillText("VS", 600, window_height - 825);
-    ctx.fillText("Local: " + deletedCount, 300, window_height - 825);
+    ctx.fillText("Visitante: " + disappearedCount, 900, window_height - 625);
+    ctx.fillText("VS", 600, window_height - 625);
+    ctx.fillText("Local: " + deletedCount, 300, window_height - 625);
 }
 
 // Función para verificar si todas las imágenes han desaparecido y mostrar un mensaje de felicitación al ganador del juego
