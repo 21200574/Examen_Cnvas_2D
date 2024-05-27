@@ -191,9 +191,9 @@ canvas.addEventListener('mousedown', function(evt) {
 function drawCounters() {
     ctx.font = "bold 50px Arial";
     ctx.fillStyle = "White";    
-    ctx.fillText("Visitante: " + disappearedCount, 900, window_height - 925);
-    ctx.fillText("VS", 600, window_height - 925);
-    ctx.fillText("Local: " + deletedCount, 300, window_height - 925);
+    ctx.fillText("Visitante: " + disappearedCount, 900, window_height - 825);
+    ctx.fillText("VS", 600, window_height - 825);
+    ctx.fillText("Local: " + deletedCount, 300, window_height - 825);
 }
 
 // Función para verificar si todas las imágenes han desaparecido y mostrar un mensaje de felicitación al ganador del juego
