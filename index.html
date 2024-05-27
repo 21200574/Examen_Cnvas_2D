@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champions League</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; 
+        }
+
+        header {
+            background-color: #333; 
+            color: white; 
+            padding: 35px; 
+            text-align: center; 
+            
+        }
+
+        footer {
+            background-color: #333; 
+            color: white; 
+            padding: 25px; 
+            text-align: center; 
+            
+        }
+
+        main {
+            
+    background-image: url('Imagenes/Fondo.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    min-height: calc(100vh - 150px); 
+    
+     
+    margin: 0 auto; /* Centra el elemento horizontalmente */
+}
+
+        
+
+        canvas {
+            display: block; 
+            margin: 0 auto; 
+        }
+
+        
+        .canvas-cursor {
+            cursor: url('Imagenes/G.png'), auto;
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Champions League</h1>
+        
+    </header>
+
+    <main>
+        
+    <canvas id="canvas" class="canvas-cursor"></canvas>
+
+    </main>
+
+    <footer>
+        <p>Creado por: Leonardo Alvarez Perez</p>
+        
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
